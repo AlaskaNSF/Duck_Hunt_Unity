@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class Book_Shoot : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Rigidbody2D bookPhysics;
     public Animator bookAnimations;
+
+    [Header("Audio Config")]
+    public AudioSource movementAudioSource;
+    public AudioClip catchSound;
+    public AudioClip killSound;
 
     void Start()
     {
@@ -19,28 +23,40 @@ public class Book_Shoot : MonoBehaviour
 
     void OnMouseOver()
     {
+        // Clic izquierdo (atrapar/catch)
         if (Input.GetMouseButtonDown(0))
         {
-            bookPhysics.linearVelocity = UnityEngine.Vector2.zero;
-            bookPhysics.bodyType = RigidbodyType2D.Kinematic;
-
-            if (TryGetComponent<Collider2D>(out Collider2D col)) {
-                col.enabled = false;
-            }
-            bookAnimations.SetTrigger("Kill");
-            Destroy(gameObject,2f);
+            HandleInteraction("Catch", catchSound);
         }
 
+        // Clic derecho (destruir/kill)
         if (Input.GetMouseButtonDown(1))
         {
-            bookPhysics.linearVelocity = UnityEngine.Vector2.zero;
-            bookPhysics.bodyType = RigidbodyType2D.Kinematic;
-
-            if (TryGetComponent<Collider2D>(out Collider2D col)) {
-                col.enabled = false;
-            }
-            bookAnimations.SetTrigger("Catch");
-            Destroy(gameObject,2f);
+            HandleInteraction("Kill", killSound);
         }
+    }
+
+    void HandleInteraction(string triggerName, AudioClip feedbackSound)
+    {
+        // 1 - Desactivo la física para que el target quede quieto en el lugar donde se encuentre
+        bookPhysics.linearVelocity = UnityEngine.Vector2.zero;
+        bookPhysics.bodyType = RigidbodyType2D.Kinematic;
+
+        // 2 - Desactivo el collider para evitar múltiples clics
+        if (TryGetComponent<Collider2D>(out Collider2D col))
+        {
+            col.enabled = false;
+        }
+
+        // 3 - Freno la música de movimiento para reproducir efecto de catch o kill
+        if (movementAudioSource != null)
+        {
+            movementAudioSource.Stop();
+            movementAudioSource.PlayOneShot(feedbackSound);
+        }
+
+        // 4 - Seteo la animación de catch o kill y elimino el objeto
+            bookAnimations.SetTrigger(triggerName);
+            Destroy(gameObject,2f);
     }
 }
