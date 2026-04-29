@@ -28,12 +28,16 @@ public class Dementor_Shoot : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             HandleInteraction("Catch", catchSound);
+            Level_Manager.dementorsCatched++;
+            Game_Manager.score--;
         }
 
         // Clic derecho (destruir/kill)
         if (Input.GetMouseButtonDown(1))
         {
             HandleInteraction("Kill", killSound);
+            Level_Manager.dementorsDestroyed++;
+            Game_Manager.score++;
         }
     }
 

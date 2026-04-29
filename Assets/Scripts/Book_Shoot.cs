@@ -12,7 +12,7 @@ public class Book_Shoot : MonoBehaviour
 
     void Start()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -27,12 +27,16 @@ public class Book_Shoot : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             HandleInteraction("Catch", catchSound);
+            Level_Manager.booksCatched++;
+            Game_Manager.score++;
         }
 
         // Clic derecho (destruir/kill)
         if (Input.GetMouseButtonDown(1))
         {
             HandleInteraction("Kill", killSound);
+            Level_Manager.booksDestroyed++;
+            Game_Manager.score--;
         }
     }
 
