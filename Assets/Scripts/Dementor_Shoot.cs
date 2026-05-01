@@ -28,7 +28,7 @@ public class Dementor_Shoot : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             HandleInteraction("Catch", catchSound);
-            Level_Manager.dementorsCatched++;
+            Level_Manager.dementorsCaught++;
             Game_Manager.score--;
         }
 

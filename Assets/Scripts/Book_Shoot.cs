@@ -27,7 +27,7 @@ public class Book_Shoot : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             HandleInteraction("Catch", catchSound);
-            Level_Manager.booksCatched++;
+            Level_Manager.booksCaught++;
             Game_Manager.score++;
         }
 

@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
 {
-    public Text booksCatched;
+    public Text booksCaught;
     public Text booksDestroyed;
-    public Text dementorsCatched;
+    public Text dementorsCaught;
     public Text dementorsDestroyed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,9 +17,9 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        booksCatched.text = "Libros atrapados:" + Level_Manager.booksCatched;
+        booksCaught.text = "Libros atrapados:" + Level_Manager.booksCaught;
         booksDestroyed.text = "Libros destruidos:" + Level_Manager.booksDestroyed;
-        dementorsCatched.text = "Dementores atrapados:" + Level_Manager.dementorsCatched;
+        dementorsCaught.text = "Dementores atrapados:" + Level_Manager.dementorsCaught;
         dementorsDestroyed.text = "Dementores destruidos:" + Level_Manager.dementorsDestroyed;
     }
 }
