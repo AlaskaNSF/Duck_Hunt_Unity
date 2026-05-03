@@ -17,9 +17,9 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        booksCaught.text = "Libros atrapados:" + Level_Manager.booksCaught;
-        booksDestroyed.text = "Libros destruidos:" + Level_Manager.booksDestroyed;
-        dementorsCaught.text = "Dementores atrapados:" + Level_Manager.dementorsCaught;
-        dementorsDestroyed.text = "Dementores destruidos:" + Level_Manager.dementorsDestroyed;
+        booksCaught.text = "Books caught:" + Level_Manager.booksCaught;
+        booksDestroyed.text = "Books destroyed:" + Level_Manager.booksDestroyed;
+        dementorsCaught.text = "Dementors caught:" + Level_Manager.dementorsCaught;
+        dementorsDestroyed.text = "Dementors destroyed:" + Level_Manager.dementorsDestroyed;
     }
 }

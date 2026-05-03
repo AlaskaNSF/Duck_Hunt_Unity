@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8447694834867530597
+--- !u!1 &5171969226206006668
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,14 +8,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1087163426603255694}
-  - component: {fileID: 5457984954249221940}
-  - component: {fileID: 5751929448753794200}
-  - component: {fileID: 8095054025305791414}
-  - component: {fileID: 5139395793795180928}
-  - component: {fileID: 7103863842638263881}
-  - component: {fileID: 4061100539039028110}
-  - component: {fileID: 4556854012860176516}
+  - component: {fileID: 6507721482507844653}
+  - component: {fileID: 941075478969765289}
+  - component: {fileID: 2650854350572738268}
+  - component: {fileID: 6498169003674506030}
+  - component: {fileID: 6599562104114314844}
+  - component: {fileID: 2579376328752061998}
+  - component: {fileID: 3528710746491406823}
+  - component: {fileID: 2506209297817682507}
   m_Layer: 0
   m_Name: Dementor(R)
   m_TagString: Untagged
@@ -23,29 +23,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1087163426603255694
+--- !u!4 &6507721482507844653
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447694834867530597}
+  m_GameObject: {fileID: 5171969226206006668}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: -1, z: 0}
+  m_LocalPosition: {x: 5.5, y: -2.5, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5457984954249221940
+--- !u!212 &941075478969765289
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447694834867530597}
+  m_GameObject: {fileID: 5171969226206006668}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -97,14 +97,14 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &5751929448753794200
+--- !u!95 &2650854350572738268
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447694834867530597}
+  m_GameObject: {fileID: 5171969226206006668}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a7c76680253662048b8d9f38e2e515de, type: 2}
@@ -119,14 +119,14 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!50 &8095054025305791414
+--- !u!50 &6498169003674506030
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447694834867530597}
+  m_GameObject: {fileID: 5171969226206006668}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -146,13 +146,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &5139395793795180928
+--- !u!61 &6599562104114314844
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447694834867530597}
+  m_GameObject: {fileID: 5171969226206006668}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -192,44 +192,44 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.8699212, y: 3.8530345}
   m_EdgeRadius: 0
---- !u!114 &7103863842638263881
+--- !u!114 &2579376328752061998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447694834867530597}
+  m_GameObject: {fileID: 5171969226206006668}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abea3bc3dee0fdf4abd4d29a6118e67a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dementor_Shoot
-  dementorPhysics: {fileID: 8095054025305791414}
-  dementorAnimations: {fileID: 5751929448753794200}
-  movementAudioSource: {fileID: 4556854012860176516}
+  dementorPhysics: {fileID: 6498169003674506030}
+  dementorAnimations: {fileID: 2650854350572738268}
+  movementAudioSource: {fileID: 2506209297817682507}
   catchSound: {fileID: 8300000, guid: f1f286185db54fa41acd7b3581c140d1, type: 3}
   killSound: {fileID: 8300000, guid: 29262743db7d76544b1eb14359b55e0b, type: 3}
---- !u!114 &4061100539039028110
+--- !u!114 &3528710746491406823
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447694834867530597}
+  m_GameObject: {fileID: 5171969226206006668}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d19711f923750478b3cd8f653d0ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dementor
-  dementorPhysics: {fileID: 8095054025305791414}
-  speed: {x: -0.5, y: 0.5, z: 0}
---- !u!82 &4556854012860176516
+  dementorPhysics: {fileID: 6498169003674506030}
+  speed: {x: -0.5, y: 0.4, z: 0}
+--- !u!82 &2506209297817682507
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447694834867530597}
+  m_GameObject: {fileID: 5171969226206006668}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}

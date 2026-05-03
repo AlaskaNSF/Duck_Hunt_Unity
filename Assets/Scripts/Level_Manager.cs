@@ -11,9 +11,12 @@ public class Level_Manager : MonoBehaviour
     public static int score;
 
     [Header("Game timer config")]
-    public float timeRemaining = 30f;
+    public float timeRemaining = 60f;
     private bool gameActive = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [Header("UI Config")]
+    public CanvasGroup hudCanvasGroup;
     void Start()
     {
         booksCaught = 0;
@@ -22,25 +25,32 @@ public class Level_Manager : MonoBehaviour
         dementorsDestroyed = 0;
         score = 0;
         gameActive = false;
+
+        if (hudCanvasGroup != null) hudCanvasGroup.alpha = 0;
     }
 
     public void StartTimer()
     {
         gameActive = true;
+
+        if (hudCanvasGroup != null) hudCanvasGroup.alpha = 1;
     }
-    // Update is called once per frame
+
+    public bool IsGameActive()
+    {
+        return gameActive;
+    }
+
     void Update()
     {
-        Debug.Log("Libros atrapados: " + booksCaught);
-        Debug.Log("Libros destruidos: " + booksDestroyed);
-        Debug.Log("Dementores atrapados: " + dementorsCaught);
-        Debug.Log("Dementores destruidos: " + dementorsDestroyed);
-
         if (gameActive)
         {
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
+
+                // Si por la resta el tiempo quedó negativo, lo clavo en 0
+                if (timeRemaining < 0) timeRemaining = 0;
             }
 
             else
@@ -54,6 +64,7 @@ public class Level_Manager : MonoBehaviour
     {
         gameActive = false;
         timeRemaining = 0;
+        CancelInvoke();
         SceneManager.LoadScene("Game_over");
     }
 }

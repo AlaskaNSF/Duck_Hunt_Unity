@@ -1,18 +1,38 @@
 using UnityEngine;
 
-public class H_Book : MonoBehaviour
+public class H_book : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Rigidbody2D bookPhysics;
-    public UnityEngine.Vector3 speed;
+    public Vector3 speed;
+
+    // Límites de la pantalla
+    private float topLimit = 4;
+    private float leftLimit = -8f;
+    private float rightLimit = 8f;
+
     void Start()
     {
-        Destroy(gameObject, 5f);
+        
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Aplicar movimiento
         bookPhysics.AddForce(speed);
+
+        // Control de límites para limpieza de objetos y sonidos
+        CheckScreenLimits();
+    }
+
+    private void CheckScreenLimits()
+    {
+        // Verifico si el objeto salió por arriba, por la izquierda o por la derecha
+        if (transform.position.y > topLimit || 
+            transform.position.x < leftLimit || 
+            transform.position.x > rightLimit)
+        {
+            // Destruyo el objeto, para que no siga reproduciendo el sonido de vuelo
+            Destroy(gameObject);
+        }
     }
 }
