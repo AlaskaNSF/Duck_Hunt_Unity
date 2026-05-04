@@ -834,18 +834,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   targetBag:
-  - {fileID: 808998739981048103, guid: 525882e2c42f6874f8235dfa8278fc70, type: 3}
-  - {fileID: 5849449867140497612, guid: e5e525bfb2c08c8469c952433a6a3d4b, type: 3}
-  - {fileID: 4265040520827141085, guid: ce04759cffe809443918ed7eae0d5ae8, type: 3}
-  - {fileID: 5933029555948453804, guid: 67987227b79d76d49b52cc5e1dce9add, type: 3}
-  - {fileID: 2740336270315465563, guid: 13dc53b4d195aeb418ebfcf6243f2818, type: 3}
-  - {fileID: 5573632863563085405, guid: 8a3cf8a2cbca4ac44af5415fecbb1e7f, type: 3}
-  - {fileID: 2964144115565676766, guid: 785321d33d402d7448dd47b49c29a865, type: 3}
-  - {fileID: 5171969226206006668, guid: c879bb2c412c97c42953d468f0c2ce0d, type: 3}
-  - {fileID: 8440314345716366785, guid: 40c4be681f79f4049b9d1365ea10208c, type: 3}
-  - {fileID: 372648521317958346, guid: 03ad44e83487a1346beee16faa26089b, type: 3}
-  - {fileID: 2264523046372357649, guid: 9b9984bc69e454640a30aa9f043d212a, type: 3}
-  - {fileID: 500606467818273679, guid: 848a22bc832c7ed4bb3c5f708985fdc7, type: 3}
+  - {fileID: 314079238420514703, guid: 525882e2c42f6874f8235dfa8278fc70, type: 3}
+  - {fileID: 4181618831087536234, guid: e5e525bfb2c08c8469c952433a6a3d4b, type: 3}
+  - {fileID: 1822982689465788310, guid: ce04759cffe809443918ed7eae0d5ae8, type: 3}
+  - {fileID: 341220165473756739, guid: 67987227b79d76d49b52cc5e1dce9add, type: 3}
+  - {fileID: 6217196388323281958, guid: 13dc53b4d195aeb418ebfcf6243f2818, type: 3}
+  - {fileID: 7953849810969142216, guid: 8a3cf8a2cbca4ac44af5415fecbb1e7f, type: 3}
+  - {fileID: 8634708189708776544, guid: 785321d33d402d7448dd47b49c29a865, type: 3}
+  - {fileID: 1127182536091994919, guid: c879bb2c412c97c42953d468f0c2ce0d, type: 3}
+  - {fileID: 5706847539331306444, guid: 40c4be681f79f4049b9d1365ea10208c, type: 3}
+  - {fileID: 7041609497259913902, guid: 03ad44e83487a1346beee16faa26089b, type: 3}
+  - {fileID: 6443257975815580431, guid: 9b9984bc69e454640a30aa9f043d212a, type: 3}
+  - {fileID: 1468352781606350350, guid: 848a22bc832c7ed4bb3c5f708985fdc7, type: 3}
   spawnDelay: 0.5
 --- !u!4 &944398738
 Transform:
