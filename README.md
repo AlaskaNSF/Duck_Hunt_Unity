@@ -1,11 +1,13 @@
 Spell Hunt (Duck Hunt personalizado)
 
 - Sobre el Proyecto
+
 Spell Hunt es un juego 2D, inspirado en las mecánicas del clásico Duck Hunt, ambientado en el universo mágico de Harry Potter. Este proyecto fue desarrollado como mi primer acercamiento formal al motor Unity y a la programación orientada a objetos con C#.
 
 El objetivo principal de este desarrollo fue aplicar la teoría de programación a un entorno interactivo real, comprendiendo el ciclo de vida de los objetos en pantalla, la gestión de escenas y el diseño de interfaces de usuario adaptativas.
 
 - Características Técnicas y Aprendizajes
+
 Durante el desarrollo del proyecto, me enfoqué en implementar código limpio y mecánicas eficientes, abarcando los siguientes sistemas:
 
 Game Loop & State Management: Implementación de un Level_Manager para controlar el estado activo del juego, el temporizador en tiempo real y la persistencia de datos (puntajes y estadísticas) entre múltiples escenas (Menú, Juego, Pantalla de Resultados).
@@ -17,6 +19,7 @@ UI/UX y Resolución Adaptativa: Integración de interfaz gráfica utilizando el 
 Custom Software Cursor: Desarrollo de un script personalizado para ocultar el cursor del sistema operativo y reemplazarlo por un cursor animado renderizado por software, interactuando directamente con la capa de UI.
 
 - Tecnologías Utilizadas
+
 Motor Gráfico: Unity (Modo 2D)
 
 Lenguaje: C#
